@@ -2,8 +2,8 @@
 
 namespace Saasu.Core.Repositories
 {
-    public interface ITennantRepository
+    public interface ITenantRepository
     {
-        IEnumerable<Tennant> GetTennants();
+        IEnumerable<Tenant> GetTenants();
     }
 }

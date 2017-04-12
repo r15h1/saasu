@@ -7,8 +7,8 @@ namespace Saasu.Core
 {
     public static class Constants
     {
-        public const string Tennant_List_Cache_Key = "Tennant_List_Cache_Key";
-        public const string Tennant_Theme_Context_Key = "Tennant_Theme_Context_Key";
-        public const string Tennant_Context_Key = "Tennant_Context_Key";
+        public const string Tenant_List_Cache_Key = "Tenant_List_Cache_Key";
+        public const string Tenant_Theme_Key = "Tenant_Theme_Key";
+        public const string Tenant_Id_Key = "Tenant_Id_Key";
     }
 }
