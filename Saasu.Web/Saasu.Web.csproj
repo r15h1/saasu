@@ -24,7 +24,7 @@
     <ProjectReference Include="..\Saasu.Mock\Saasu.Mock.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Themes\" />
+    <Folder Include="Themes\Rocky\Shared\" />
   </ItemGroup>
 
 </Project>
