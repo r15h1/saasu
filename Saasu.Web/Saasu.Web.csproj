@@ -26,6 +26,7 @@
   <ItemGroup>
     <Folder Include="Themes\Rocky\Shared\" />
     <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\themes\adminiz\" />
   </ItemGroup>
 
 </Project>
