@@ -14,13 +14,14 @@ namespace Saasu.Mock.Repositories
                 new Tenant(){
                     Id = 1,
                     Name = "Tennant1",
-                    Hostnames = new List<string>{ "localhost:8000", "localhost:8001" }
+                    Theme = new Theme(){ Name = "Default" },
+                    Hostnames = new List<string>{ "localhost:56819", "localhost:8000", "localhost:8001" }
                 },
                 new Tenant(){
                     Id = 2,
                     Name = "Tennant2",
                     Theme = new Theme(){ Name = "Rocky" },
-                    Hostnames = new List<string>{ "localhost:56816" }
+                    Hostnames = new List<string>{ "localhost:56817" }
                 }
             };
         }
