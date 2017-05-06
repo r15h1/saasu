@@ -20,7 +20,7 @@ namespace Saasu.Mock.Repositories
                 new Tenant(){
                     Id = 2,
                     Name = "Tennant2",
-                    Theme = new Theme(){ Name = "Adminiz" },
+                    Theme = new Theme(){ Name = "eNno" },
                     Hostnames = new List<string>{ "localhost:56816" }
                 }
             };
