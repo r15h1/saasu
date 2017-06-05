@@ -54,7 +54,7 @@ hr {
   line-height: 20px;
 }
 a.navbar-brand span {
-	color:#000;
+	color:#fff;
 	font-size:35px;	
 }
 
@@ -70,7 +70,7 @@ a.navbar-brand span {
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 0;
-  background-color:#ffdf1e;
+  background-color:#0db4be;
 }
 .nav-tabs {
   border-bottom:0; 
@@ -87,24 +87,26 @@ a.navbar-brand span {
   border-radius: 0 0 0 0;
   text-transform:uppercase;
   font-weight:600;
-  color:#000;
+  color:#fff;
 }
 .nav-tabs > li > a:hover {
-    background-color: #e5c818;
+	background-color: #36CBD4;
 }
 .nav-tabs > li.active > a {
-    color: #fff;
-    cursor: default;
-    background-color: #e5c818;
-    border: 0;
-    border-bottom-color: transparent;
+	color: #fff;
+  cursor: default;
+  background-color:#36CBD4;
+  border: 0;
+  border-bottom-color: transparent;
+
 }
 .nav-tabs > li.active > a:hover {
-    color: #fff;
-    border: 0;
-    background-color: #c1ad35;
-    cursor: pointer;
+	color: #fff;
+	border: 0;
+	background-color: #36CBD4;
+	cursor: pointer;
 }
+
 .nav-tabs > li {
     margin-bottom: 0;
 }
