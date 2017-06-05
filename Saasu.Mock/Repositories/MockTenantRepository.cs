@@ -21,7 +21,7 @@ namespace Saasu.Mock.Repositories
                     Id = 2,
                     Name = "Tennant2",
                     Theme = new Theme(){ Name = "eNno" },
-                    Hostnames = new List<string>{ "localhost:56816" }
+                    Hostnames = new List<string>{ "localhost:5000" }
                 }
             };
         }
