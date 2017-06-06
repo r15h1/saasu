@@ -14,7 +14,6 @@
     <Content Remove="wwwroot/themes\Amoeba.zip" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="wwwroot\themes\Amoeba.zip" />
     <Content Include="wwwroot\themes\Amoeba\Amoeba\contactform\readme.txt" />
     <Content Include="wwwroot\themes\Amoeba\Amoeba\css\animate.css" />
     <Content Include="wwwroot\themes\Amoeba\Amoeba\css\bootstrap-theme.css" />
@@ -73,7 +72,6 @@
     <Content Include="wwwroot\themes\Amoeba\Amoeba\js\stellar.js" />
     <Content Include="wwwroot\themes\Amoeba\Amoeba\readme.txt" />
     <Content Include="wwwroot\themes\Amoeba\Amoeba\skin\default.css" />
-    <Content Include="wwwroot\themes\Baker.zip" />
     <Content Include="wwwroot\themes\Baker\contactform\readme.txt" />
     <Content Include="wwwroot\themes\Baker\css\animate.css" />
     <Content Include="wwwroot\themes\Baker\css\bootstrap.min.css" />
@@ -355,7 +353,6 @@
     <Content Include="wwwroot\themes\Hidayah\js\wow.min.js" />
     <Content Include="wwwroot\themes\Hidayah\portfolio.html" />
     <Content Include="wwwroot\themes\Hidayah\readme.txt" />
-    <Content Include="wwwroot\themes\Knight.zip" />
     <Content Include="wwwroot\themes\Knight\contactform\readme.txt" />
     <Content Include="wwwroot\themes\Knight\css\animate.css" />
     <Content Include="wwwroot\themes\Knight\css\bootstrap.css" />
@@ -414,7 +411,6 @@
     <Content Include="wwwroot\themes\Knight\js\wow.js" />
     <Content Include="wwwroot\themes\Knight\PIE.htc" />
     <Content Include="wwwroot\themes\Knight\readme.txt" />
-    <Content Include="wwwroot\themes\Mamba.zip" />
     <Content Include="wwwroot\themes\Mamba\color\default.css" />
     <Content Include="wwwroot\themes\Mamba\contactform\readme.txt" />
     <Content Include="wwwroot\themes\Mamba\css\animate.css" />
@@ -466,7 +462,6 @@
     <Content Include="wwwroot\themes\Mamba\js\modernizr.custom.js" />
     <Content Include="wwwroot\themes\Mamba\js\wow.min.js" />
     <Content Include="wwwroot\themes\Mamba\readme.txt" />
-    <Content Include="wwwroot\themes\Moderna.zip" />
     <Content Include="wwwroot\themes\Moderna\blog.html" />
     <Content Include="wwwroot\themes\Moderna\components.html" />
     <Content Include="wwwroot\themes\Moderna\contact.html" />
@@ -630,7 +625,6 @@
     <Content Include="wwwroot\themes\Ninestars\js\nivo-lightbox.min.js" />
     <Content Include="wwwroot\themes\Ninestars\js\stellar.js" />
     <Content Include="wwwroot\themes\Ninestars\readme.txt" />
-    <Content Include="wwwroot\themes\OnePage.zip" />
     <Content Include="wwwroot\themes\OnePage\contactform\readme.txt" />
     <Content Include="wwwroot\themes\OnePage\css\animate.css" />
     <Content Include="wwwroot\themes\OnePage\css\animate.min.css" />

@@ -14,127 +14,87 @@
     <link rel="stylesheet" href="@themeroot/css/bootstrap.min.css">
     <link rel="stylesheet" href="@themeroot/css/animate.css">
     <link rel="stylesheet" href="@themeroot/css/font-awesome.min.css">
-    <link rel="stylesheet" href="@themeroot/css/jquery.bxslider.css">
-    <link rel="stylesheet" type="text/css" href="@themeroot/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="@themeroot/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="@themeroot/css/set1.css" />
-    <link rel="stylesheet" href="@themeroot/css/overwrite.css">
+    <link href="@themeroot/css/prettyPhoto.css" rel="stylesheet"> 
     <link rel="stylesheet" href="@themeroot/css/style.css">
 
     
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><span>eNno</span></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <div class="menu">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="index.html">Home</a></li>
-                        <li role="presentation"><a href="services.html">Services</a></li>
-                        <li role="presentation"><a href="blog.html">Blog</a></li>
-                        <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-                        <li role="presentation"><a href="contact.html">Contact</a></li>
+            <div class="row">
+                <div class="site-logo">
+                    <a href="index.html" class="brand">OnePage</a>
+                </div>
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+                <!-- /.Navbar-collapse -->
             </div>
         </div>
     </nav>
     <div class="container">
         @RenderBody()
     </div>
-    <footer>
-        <div class="inner-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 f-about">
-                        <a href="index.html"><h1><span>e</span>Nno</h1></a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero
-                            vestibulum volutpat libero sollicitudin vitae Curabitur ac aliquam  consectetur adipiscing elit Cras suscipit arcu libero
-                        </p>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="text-center">
+                        <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
                     </div>
-                    <div class="col-md-4 l-posts">
-                        <h3 class="widgetheading">Latest Posts</h3>
-                        <ul>
-                            <li><a href="#">This is awesome post title</a></li>
-                            <li><a href="#">Awesome features are awesome</a></li>
-                            <li><a href="#">Create your own awesome website</a></li>
-                            <li><a href="#">Wow, this is fourth post title</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 f-contact">
-                        <h3 class="widgetheading">Stay in touch</h3>
-                        <a href="#"><p><i class="fa fa-envelope"></i> example@gmail.com</p></a>
-                        <p><i class="fa fa-phone"></i>  +345 578 59 45 416</p>
-                        <p>
-                            <i class="fa fa-home"></i> Enno inc  |  PO Box 23456
-                            Little Lonsdale St, New York <br>
-                            Victoria 8011 USA
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="last-div">
-            <div class="container">
-                <div class="row">
-                    <div class="copyright">
-                        &copy; eNno Theme. All Rights Reserved
-                        <div class="credits">
-                            <!--
+                    &copy; OnePage Theme. All Rights Reserved.
+                    <div class="credits">
+                        <!--
                             All the links in the footer should remain intact.
                             You can delete the links only if you purchased the pro version.
                             Licensing information: https://bootstrapmade.com/license/
-                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eNno
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=OnePage
                         -->
-                            <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    </div>
+                </div>
+
+                <div class="top-bar">
+                    <div class="col-lg-12">
+                        <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <ul class="social-network">
-                        <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
-                        <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
-                        <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
-                        <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
-                        <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <a href="" class="scrollup"><i class="fa fa-chevron-up"></i></a>
-
-
         </div>
-    </footer>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="@themeroot/js/jquery-2.1.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    </footer><!--/#footer-->
+    <script src="@themeroot/js/jquery-2.1.1.min.js"></script>    
     <script src="@themeroot/js/bootstrap.min.js"></script>
-    <script src="@themeroot/js/wow.min.js"></script>
-    <script src="@themeroot/js/jquery.easing.1.3.js"></script>
+    <script src="@themeroot/js/jquery.prettyPhoto.js"></script>
     <script src="@themeroot/js/jquery.isotope.min.js"></script>
-    <script src="@themeroot/js/jquery.bxslider.min.js"></script>
-    <script src="@themeroot/js/fliplightbox.min.js"></script>
-    <script src="@themeroot/js/functions.js"></script>
-    <script type="text/javascript">$('.portfolio').flipLightBox()</script>
+    <script src="@themeroot/js/wow.min.js"></script>
+    <script src="@themeroot/js/jquery.easing.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="@themeroot/js/main.js"></script>
+    <script src="@themeroot/contactform/contactform.js"></script>
 
-    @RenderSection("Scripts", required: false)
 </body>
+
 </html>
