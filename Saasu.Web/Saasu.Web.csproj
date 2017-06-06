@@ -11,6 +11,12 @@
 <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="wwwroot\images\**" />
+    <Content Remove="wwwroot\images\**" />
+    <EmbeddedResource Remove="wwwroot\images\**" />
+    <None Remove="wwwroot\images\**" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Remove="wwwroot/themes\Amoeba.zip" />
   </ItemGroup>
   <ItemGroup>
@@ -1027,9 +1033,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Saasu.Core\Saasu.Core.csproj" />
     <ProjectReference Include="..\Saasu.Mock\Saasu.Mock.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 <ItemGroup>
  <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
