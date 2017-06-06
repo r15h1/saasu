@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Saasu.Core;
 using Saasu.Core.Repositories;
+using Saasu.Lib;
 using Saasu.Mock.Repositories;
 using Saasu.Web.Middleware;
 
@@ -28,13 +29,15 @@ namespace Saasu.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Settings.ConnectionString = Configuration.GetConnectionString("Saasu");
+
             services.AddMultitenancy<Tenant, TenantResolver>();
             services.AddMvc();
             services.Configure<RazorViewEngineOptions>(options =>
             {
                 options.ViewLocationExpanders.Add(new TenantViewLocationExpander());
             });
-            services.AddScoped<ITenantRepository, MockTenantRepository>();
+            services.AddScoped<ITenantRepository, Saasu.Lib.Repositories.TenantRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
