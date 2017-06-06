@@ -1,0 +1,89 @@
+﻿@inject Saasu.Core.Tenant tennant
+@{
+    var themeroot = $"/themes/{tennant.Theme.Name}";
+}
+<div class="slider text-center">
+    <img src="@themeroot/img/main-bg.png" alt="" />
+</div>
+
+<!-- column content -->
+<div id="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="big-box">
+                <div class="col-lg-12">
+                    <div class="col-md-4">
+                        <div class="box-bg">
+                            <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.9s">
+                                <div class="align-center">
+                                    <i class="fa fa-camera-retro fa-5x"></i>
+                                    <h4 class="text-bold">Customizable</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no.
+                                        Mei cu dicat voluptaria volumus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box-bg">
+                            <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.6s">
+                                <div class="align-center">
+                                    <i class="fa fa-shield fa-5x"></i>
+                                    <h4 class="text-bold">Valid HTML5</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no.
+                                        Mei cu dicat voluptaria volumus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box-bg">
+                            <div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                                <div class="align-center">
+                                    <i class="fa fa-bookmark-o fa-5x"></i>
+                                    <h4 class="text-bold">Responsive</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no.
+                                        Mei cu dicat voluptaria volumus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="wow bounceInRight">
+                <div class="col-lg-6">
+                    <h4>Maecenas luctus</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no.
+                        Mei cu dicat voluptaria volumus.
+                    </p>
+                    <a href="#" class="thumbnail">
+                        <img src="@themeroot/img/thumbnails/outline-1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="wow bounceInLeft">
+                <div class="col-lg-6">
+                    <h4>Maecenas luctus</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no.
+                        Mei cu dicat voluptaria volumus.
+                    </p>
+                    <a href="#" class="thumbnail">
+                        <img src="@themeroot/img/thumbnails/ipad.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

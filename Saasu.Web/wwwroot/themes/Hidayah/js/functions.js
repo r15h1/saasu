@@ -84,7 +84,6 @@ $(document).ready(function () {
             map: map
         });
     }
-    google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
     new WOW().init()	
 
