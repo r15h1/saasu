@@ -45,7 +45,6 @@ $('#reload-slider').click(function(e){
             map: map
         });
     }
-    google.maps.event.addDomListener(window, 'load', initialize_google_map);
 		
 })(jQuery);
 
