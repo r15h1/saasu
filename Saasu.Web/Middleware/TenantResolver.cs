@@ -30,7 +30,7 @@ namespace Saasu.Web.Middleware
         {
             TenantContext<Tenant> tenantContext = null;
 
-            var tenant = tenants.FirstOrDefault(t => t.Hostnames.Any(h => h.Equals(context.Request.Host.Value.ToLower()))) ?? new Tenant { Name = "Default Tenant", Hostnames = new string[0], Theme = new Theme { Name = "Default"} }; ;
+            var tenant = tenants.FirstOrDefault(t => t.HostNames.Any(h => h.Equals(context.Request.Host.Value.ToLower()))) ?? new Tenant();
 
             if (tenant != null)
                 tenantContext = new TenantContext<Tenant>(tenant);

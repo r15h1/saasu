@@ -15,7 +15,7 @@ namespace Saasu.Web.Middleware
         public void PopulateValues(ViewLocationExpanderContext context)
         {
             context.Values[Constants.Tenant_Theme_Key]
-                = context.ActionContext.HttpContext.GetTenant<Tenant>()?.Theme.Name ?? "Default";
+                = context.ActionContext.HttpContext.GetTenant<Tenant>()?.Theme ?? "Default";
 
             context.Values[Constants.Tenant_Id_Key]
                 = context.ActionContext.HttpContext.GetTenant<Tenant>()?.Id.ToString();
