@@ -669,3 +669,7 @@ and (max-width : 480px) {
     font-size: 20px;
 }
 }
+
+.img-responsive {
+    margin: 0 auto;
+}
