@@ -9,7 +9,7 @@ namespace Saasu.Core
             Settings = new Dictionary<string, string>();
         }
 
-        public long Id { get; set; }
+        public long? Id { get; set; }
         public string Name { get; set; }
         public Dictionary<string, string> Settings { get; set; }
         public IEnumerable<string> HostNames

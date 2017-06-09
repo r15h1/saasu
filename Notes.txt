@@ -1,0 +1,3 @@
+To generate script from postgresql
+
+pg_dump -f DBScript.sql  -W  -c -C -F p -O -W -U postgres  dbname=saas

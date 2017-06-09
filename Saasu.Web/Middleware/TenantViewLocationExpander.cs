@@ -15,16 +15,19 @@ namespace Saasu.Web.Middleware
         public void PopulateValues(ViewLocationExpanderContext context)
         {
             context.Values[Constants.Tenant_Theme_Key]
-                = context.ActionContext.HttpContext.GetTenant<Tenant>()?.Theme ?? "Default";
+                = context.ActionContext.HttpContext.GetTenant<Tenant>()?.Theme ?? null;
 
             context.Values[Constants.Tenant_Id_Key]
-                = context.ActionContext.HttpContext.GetTenant<Tenant>()?.Id.ToString();
+                = context.ActionContext.HttpContext.GetTenant<Tenant>()?.Id?.ToString();
         }
 
+        /// <summary>
+        /// absence of theme means this is not a registered tenant in which case use /Views views instead of /Themes views
+        /// </summary>
         public IEnumerable<string> ExpandViewLocations(ViewLocationExpanderContext context, IEnumerable<string> viewLocations)
         {
             string theme = null;
-            if (context.Values.TryGetValue(Constants.Tenant_Theme_Key, out theme))
+            if (context.Values.TryGetValue(Constants.Tenant_Theme_Key, out theme) && !string.IsNullOrWhiteSpace(theme))
             {
                 IEnumerable<string> themeLocations = new[]
                 {
