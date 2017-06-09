@@ -546,33 +546,33 @@
     <Content Include="wwwroot\themes\Siimple\assets\js\bootstrap.min.js" />
     <Content Include="wwwroot\themes\Siimple\index.html" />
     <Content Include="wwwroot\themes\Siimple\readme.txt" />
-    <Content Include="wwwroot\themes\_Saasu\css\bootstrap-theme.css" />
-    <Content Include="wwwroot\themes\_Saasu\css\bootstrap-theme.css.map" />
-    <Content Include="wwwroot\themes\_Saasu\css\bootstrap-theme.min.css" />
-    <Content Include="wwwroot\themes\_Saasu\css\bootstrap.css" />
-    <Content Include="wwwroot\themes\_Saasu\css\bootstrap.css.map" />
-    <Content Include="wwwroot\themes\_Saasu\css\bootstrap.min.css" />
-    <Content Include="wwwroot\themes\_Saasu\css\style.css" />
-    <Content Include="wwwroot\themes\_Saasu\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="wwwroot\themes\_Saasu\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="wwwroot\themes\_Saasu\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="wwwroot\themes\_Saasu\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="wwwroot\themes\_Saasu\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\author-2.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\author-4.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\author-6.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\portfolio-1.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\portfolio-2.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\portfolio-3.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\portfolio-4.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\portfolio-5.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\demo\portfolio-6.jpg" />
-    <Content Include="wwwroot\themes\_Saasu\images\logo.png" />
-    <Content Include="wwwroot\themes\_Saasu\index.html" />
-    <Content Include="wwwroot\themes\_Saasu\js\bootstrap.js" />
-    <Content Include="wwwroot\themes\_Saasu\js\bootstrap.min.js" />
-    <Content Include="wwwroot\themes\_Saasu\js\SmoothScroll.js" />
-    <Content Include="wwwroot\themes\_Saasu\js\theme-scripts.js" />
+    <Content Include="wwwroot\_saasu\css\bootstrap-theme.css" />
+    <Content Include="wwwroot\_saasu\css\bootstrap-theme.css.map" />
+    <Content Include="wwwroot\_saasu\css\bootstrap-theme.min.css" />
+    <Content Include="wwwroot\_saasu\css\bootstrap.css" />
+    <Content Include="wwwroot\_saasu\css\bootstrap.css.map" />
+    <Content Include="wwwroot\_saasu\css\bootstrap.min.css" />
+    <Content Include="wwwroot\_saasu\css\style.css" />
+    <Content Include="wwwroot\_saasu\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\_saasu\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\_saasu\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\_saasu\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\_saasu\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\_saasu\images\demo\author-2.jpg" />
+    <Content Include="wwwroot\_saasu\images\demo\author-4.jpg" />
+    <Content Include="wwwroot\_saasu\images\demo\author-6.jpg" />
+    <Content Include="wwwroot\_saasu\images\demo\portfolio-1.jpg" />
+    <Content Include="wwwroot\_saasu\images\demo\portfolio-2.jpg" />
+    <Content Include="wwwroot\_saasu\images\demo\portfolio-3.jpg" />
+    <Content Include="wwwroot\_saasu\images\demo\portfolio-4.jpg" />
+    <Content Include="wwwroot\_saasu\images\demo\portfolio-5.jpg" />
+    <Content Include="wwwroot\_saasu\images\demo\portfolio-6.jpg" />
+    <Content Include="wwwroot\_saasu\images\logo.png" />
+    <Content Include="wwwroot\_saasu\index.html" />
+    <Content Include="wwwroot\_saasu\js\bootstrap.js" />
+    <Content Include="wwwroot\_saasu\js\bootstrap.min.js" />
+    <Content Include="wwwroot\_saasu\js\SmoothScroll.js" />
+    <Content Include="wwwroot\_saasu\js\theme-scripts.js" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
@@ -593,5 +593,10 @@
   </ItemGroup>
 <ItemGroup>
  <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
+</ItemGroup>
+<ItemGroup>
+  <Content Update="Views\Home\Index.cshtml">
+    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+  </Content>
 </ItemGroup> 
 </Project>

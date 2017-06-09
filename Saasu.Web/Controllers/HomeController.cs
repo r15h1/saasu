@@ -3,20 +3,16 @@ using Saasu.Core;
 
 namespace Saasu.Web.Controllers
 {
-     public class HomeController : Controller
-    {
-        private Tenant tenant;
-
-        public HomeController(Tenant tenant)
-        {
-            this.tenant = tenant;
-        }
-
+    [Route("")]
+    public class HomeController : Controller
+    {                
+        
         public IActionResult Index()
         {
             return View();
         }
 
+        [Route("themes")]
         public IActionResult Themes()
         {
             return View();
