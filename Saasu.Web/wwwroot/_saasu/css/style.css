@@ -438,11 +438,16 @@ figure.effect-bubba:hover p {
 
 .team-item {
     text-align: center;
-    background-color: #F5F5F5;
+    background-color: #2D2D2D;
+    border:solid 2px #fed136;
+    border-radius:5px;
+    margin-bottom:20px;
+    padding: 10px 10px 10px 10px;
 }
 
 .team-item h3 {
-font-size: 25px;
+    font-size: 25px;
+    color:#fed136;
     font-weight: 300;
     margin: 30px 0 20px;
     text-transform: uppercase;
